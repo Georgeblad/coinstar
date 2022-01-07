@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+}
+
+body {
+    background-color: #263238;
+}
+
+ul {
+    list-style: none;
+}
+
+.coinList-image {
+    width: 50px;
+}
+
+.coinList-item {
+    display: flex;
+}
+
+.coinSummary {
+    border-color: white !important;
+    border-style: outset !important;
+}
+
+.coin-data-category {
+    font-size: 10px;
+}
+
+.delete-icon {
+    display: none;
+    position: absolute;
+    right: 6px;
+}
+
+.coin:hover .delete-icon {
+    display: block;
+}
