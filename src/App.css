@@ -13,15 +13,15 @@ ul {
     list-style: none;
 }
 
-.coinList-image {
+.coinlist-image {
     width: 50px;
 }
 
-.coinList-item {
+.coinlist-item {
     display: flex;
 }
 
-.coinSummary {
+.coinsummary {
     border-color: white !important;
     border-style: outset !important;
 }
