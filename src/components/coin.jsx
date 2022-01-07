@@ -9,7 +9,7 @@ import {
 
 const Coin = ({ coin, deleteCoin }) => {
   return (
-    <Link to="/coindetail" className="my-1 coin">
+    <Link to={`/coins/${coin.id}`} className="my-1 coin">
       <li className="coinlist-item relative py-4 px-8 bg-slate-50 my-px rounded-md shadow-md flex justify-between items-center text-gray-900 hover:bg-slate-200">
         <img className="coinlist-image" alt="asd" src={coin.image} />
         <span>{coin.current_price}</span>
