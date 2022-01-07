@@ -9,7 +9,7 @@ import { WatchListContextProvider } from "./context/watchlist-context";
 
 const App = () => {
   return (
-    <div>
+    <div className="max-w-6xl m-auto">
       <WatchListContextProvider>
         <BrowserRouter>
           <Header />
