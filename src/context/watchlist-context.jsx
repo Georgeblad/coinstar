@@ -3,11 +3,13 @@ import React, { createContext, useEffect, useState } from "react";
 export const WatchListContext = createContext();
 
 export const WatchListContextProvider = (props) => {
-  const [watchList, setWatchList] = useState(
-    localStorage.getItem("watchList").split(",") || [
-      "bitcoin",
-    ]
-  );
+  const [watchList, setWatchList] = useState(() => {
+    try {
+      return localStorage.getItem("watchList").split(",");
+    } catch {
+      return ["bitcoin"];
+    }
+  });
 
   useEffect(() => {
     localStorage.setItem("watchList", watchList);
