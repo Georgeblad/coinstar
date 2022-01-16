@@ -3,7 +3,6 @@ import React from "react";
 const CoinData = ({ data }) => {
   const renderData = () => {
     if (data) {
-      console.log("data");
       return (
         <div className="bg-white mt-3 p-2 rounded border flex">
 
@@ -54,7 +53,6 @@ const CoinData = ({ data }) => {
         </div>
       );
     } else {
-      console.log("nodata");
     }
   };
   return <div>{renderData()}</div>;
