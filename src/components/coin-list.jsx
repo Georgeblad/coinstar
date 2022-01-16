@@ -27,7 +27,6 @@ const CoinList = () => {
     }
   }, [watchList]);
 
-
   const renderCoins = () => {
       if(isLoading) {
           return <div>Loading...</div>
